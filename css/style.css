@@ -1,0 +1,497 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* !===============>body */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+ul{
+    list-style: none;
+}
+img{
+    width: 100%;
+    display: block;
+}
+body{
+    font-family: "Arvo", serif;
+}
+/* !====================>sec1-grid */
+.container{
+    background-color: brown;
+    display: grid;
+    grid-template-areas: 
+    " screan-phone screan-phone screan-phone screan-phone screan-phone screan-phone learn-more learn-more learn-more learn-more learn-more learn-more"
+    " keyboard keyboard keyboard remote remote remote remote remote remote  card card card"
+    " playstation playstation playstation screan-lab screan-lab screan-lab screan-lab screan-lab screan-lab card card card"
+    " twitter twitter twitter popular popular popular screan-tv screan-tv screan-tv screan-tv screan-tv screan-tv";
+}
+/* !=======================>learn-more */
+.learn-more{
+    background-color:whitesmoke;
+    grid-area: learn-more ;
+    padding-top: 60px;
+    text-align: center;
+}
+.learn-more p{
+    color: rgb(159, 163, 167);
+    font-size: 14px;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+}
+.learn-more h1{
+    font-size: 48px;
+    font-weight: 400;
+    padding: 20px 0px;
+}
+.learn-more a{
+    font-size: 14px;
+    font-weight: 400;
+    color: #27b9c2;
+    font-family: "Open Sans", sans-serif;
+    padding-top: 20px;
+}
+
+/* !=======================>screan-phone */
+
+.screan-phone{
+    overflow: auto ;
+    background-color: white;
+    grid-area: screan-phone ;
+    padding: 40px 20px 0px 40px;
+    display: flex;
+    flex-wrap:wrap ;
+
+}
+.screan-phone .screan-photo{
+width: 50%;
+}
+.screan-phone .screan-info{
+width: 50%;
+grid-area: screan-info ;
+padding: 60px 0 0 20px;
+}
+.screan-phone .screan-info p{
+    color: rgb(159, 163, 167);
+    font-weight: 700;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    line-height: 20px;
+
+}
+.screan-phone .screan-info h3{
+    padding: 10px 0px 15px 0px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 32px;
+}
+.screan-phone.screan-phone img{
+    width: 85%;
+    height: 350px;
+}
+
+/* !=======================>card */
+
+.card{
+    background-color: rgb(143, 118, 188);
+    grid-area: card;
+    padding-top: 40px;
+    text-align: center;
+    overflow: hidden;
+    color: white;
+}
+.card .image-small{
+    padding: 2px 13px 1px 30px;
+    border-radius: 60px;
+    background-color: hsla(0, 0%, 100%, .08);
+    background-image: url(./../images/flag.png);
+    background-position: 35px 30%;
+    background-size: 12px;
+    background-repeat: no-repeat;
+    font-size: 10px;
+    line-height: 23px;
+    font-weight: 700;
+    letter-spacing: 2.4px;
+    display: block;
+    width: 52%;
+    height: 30px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+.card .image img{
+    width: 70%;
+    margin: auto;
+
+}
+.card .image{
+    background-color: rgb(129, 102, 176);
+    border-radius: 50%;
+    padding-top: 30px;
+}
+.card .image p{
+    text-align: center; 
+    padding-bottom: 30px;
+}
+.card  h2{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 36px;
+    padding: 20px 0 10px 0;
+}
+.card p{
+    font-family: 'Open Sans', sans-serif;
+    line-height: 26px;
+    font-size: 14px;
+}
+.card .learn{
+    width: 240px;
+    border-radius: 50px;
+    padding: 14px 28px;
+    background-color: #ffc80a;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+.card .learn a{
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+    color: #000;
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+}
+/* !=======================>remote */
+
+.remote{
+    background-color: white;
+    grid-area: remote;
+    display: flex;
+    overflow: hidden;
+    padding-top: 68px;
+    padding-right: 4%;
+    padding-left: 4%;
+    justify-content: space-around;
+    color: #333;
+}
+
+.remote .Image{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.remote img{
+    position: relative;
+    max-width: none;
+    vertical-align: middle;
+    display: inline-block;
+    left: -80%;
+    width: 130%;
+    margin-top: 40px;
+}
+
+.remote .Image .caps p{
+    font-family: "Montserrat", sans-serif;
+    color: #9fa3a7;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding-left: 20px;
+}
+.remote .Image h3{
+    margin-bottom: auto;
+    margin-top: 10px;
+    font-family: "Arvo", serif;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 400;
+    color: #333;
+    padding-left: 20px;
+}
+.remote .description{
+    width: 50%;
+
+}
+.remote .description p{
+    font-family: 'Open Sans', sans-serif;
+    line-height: 26px;
+    color: #9fa3a7; 
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.remote .description a{
+    text-decoration: none;
+    margin-top: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2.4px;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 26px;
+    color: #27b9c2;
+
+
+}
+/* !=======================>keyboard */
+
+.keyboard{
+    background-color: aqua;
+    grid-area: keyboard ;
+    text-align: center;
+    background-color: #f05638;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.keyboard .photo img{
+    width: 100%;
+}
+.keyboard .info h3{
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 32px;
+    color: #fffbfb;
+    margin-bottom: 20px;
+}
+.keyboard .info a{
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 26px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2.4px;
+    color: #ffc80a;
+    background-color: transparent;
+
+}
+/* !=======================>screan-lab */
+
+.screan-lab{
+    grid-area: screan-lab ;
+    padding-top: 40px;
+    display: flex;
+    background-image: url(./../images/ux-image.png);
+    background-position: 50% 100%;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    color: #fff;
+    text-align: center;
+    justify-content: space-between;
+    background-color: #93b6b7;
+    flex-direction: column;
+    position: relative;
+}
+.screan-lab .minlogo{
+    position: absolute;
+    left: 30px;
+    top: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 5px;
+    background-color: #fa684f;
+    font-size: 8px;
+    line-height: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+}
+.screan-lab h3{
+    font-family: "Arvo", sans-serif;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 400;
+    display: block;
+    max-width: 280px;
+    margin: auto;
+    padding-top: 31px;
+    padding-bottom: 31px;
+}
+.screan-lab img{
+    max-width: 100%;
+    vertical-align: middle;
+    display: inline-block;
+    position: relative;
+    left: -7%;
+    width: 90%;
+}
+/* !=======================>playstation */
+
+.playstation{
+    background-color: hotpink;
+    grid-area: playstation;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    background-color: #f7f8f9;
+    color: #333;
+
+}
+.playstation img{
+    max-width: 100%;
+    vertical-align: middle;
+    display: inline-block;
+    position: relative;
+    left: -7%; 
+    width: 248px;
+
+}
+.playstation h3{
+    width: 54%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: "Arvo", sans-serif;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 400;
+    text-align: center;
+}
+.playstation a{
+    cursor: pointer;
+    background-color: transparent;
+    color: #27b9c2;
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2.4px;
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+
+/* !=======================>screan-tv */
+
+.screan-tv{
+    grid-area: screan-tv ;
+    display: flex;
+    overflow: hidden;
+    padding-right: 5%;
+    padding-left: 5%;
+    justify-content: center;
+    align-items: center;
+    background-color: #2c2c2c;
+    color: #fff;
+}
+.screan-tv img{
+    margin-bottom: -7%;
+    position: relative;
+    left: -15%;
+    max-width: 100%;
+    vertical-align: middle;
+    display: inline-block;
+    width: 271px;
+    overflow: clip;
+
+}   
+.screan-tv h3{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: "Arvo", sans-serif;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 400;
+    color: #fff;
+    display: block;
+
+}
+
+/* !=======================>popular */
+
+.popular{
+    grid-area: popular ;
+    padding-top: 40px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f8f9;
+}
+
+.popular .minpopular{
+    align-self: center;
+    position: static;
+    background-color: #7bc424;
+    color: #fff;
+    font-size: 10px;
+    line-height: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 5px;
+}
+.popular .letter{
+    align-self: center;
+    text-align: center;
+
+}
+.popular h3{
+    width: 70%;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: "Arvo", sans-serif;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 400;
+    display: block;
+    color:#333;
+}
+
+/* !=======================>twitter */
+
+.twitter{
+    grid-area: twitter ;
+    padding-top: 40px;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    background-color: #38d5f4;
+    color: #fff;
+    
+}
+.twitter .sec-twitter{
+    display: flex;
+    width: 240px;
+    height: 240px;
+    padding-right: 34px;
+    padding-left: 34px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #35cfed;
+    text-align: center;
+    color: #fff;
+}
+.twitter .sec-twitter img{
+    max-width: 100%;
+    vertical-align: middle;
+    display: inline-block;
+    width: 43.5px;
+}
+.twitter .sec-twitter h3{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: "Arvo", sans-serif;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 400;
+}
